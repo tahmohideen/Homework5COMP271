@@ -29,7 +29,7 @@ void bubble_sort (int numbers [], int size)
     }
 }
 
-//for insertion we want to check our file  for
+//for insertion we want to insert values at proper points so that we continuously are sorting smaller samples
 void insertion_sort(int numbers[], int length)
 {
     int counter=0; //comparisons counter
@@ -91,7 +91,7 @@ void quick_sort(int numbers[], int a, int b)
         quick_sort(numbers,shrek,b);
     }
 }
-
+//here we implement shell sort, with the gap equal to half of the size. then we will swap elements across the gap.
 void shell_sort(int numbers[], int x)
 {
     int counter=0; //comparisons counter
@@ -112,6 +112,7 @@ void shell_sort(int numbers[], int x)
         }
     }
 }
+//here we have a fnction to help merge our data so that we can call it in our merge sort function
 void margerine(int numbers[], int a, int b, int c)
 {
     int counter=0; //comparisons counter
@@ -209,7 +210,7 @@ int main()
     }
     else if(input == "shell")
     {
-        shell_sort(numbers,5000);
+        shell_sort(numbers,10000);
     }
     else if (input == "merge")
     {
