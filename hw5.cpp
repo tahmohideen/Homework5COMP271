@@ -27,6 +27,10 @@ void bubble_sort (int numbers [], int size)
             }
         }
     }
+    cout <<"Exchanges:";
+    cout <<tracker<<endl;
+    cout<<"Comparisons:";
+    cout << counter <<endl;
 }
 
 //for insertion we want to insert values at proper points so that we continuously are sorting smaller samples
@@ -48,6 +52,10 @@ void insertion_sort(int numbers[], int length)
             tracker++;
         }
     }
+    cout <<"Exchanges:";
+    cout <<tracker<<endl;
+    cout<<"Comparisons:";
+    cout << counter <<endl;
 }
 
 //for quick sort, we want to find our pivot first. then we want to examine each side. this is a recursive function. make sure that we partition properly
@@ -90,6 +98,10 @@ void quick_sort(int numbers[], int a, int b)
     {
         quick_sort(numbers,shrek,b);
     }
+    cout <<"Exchanges:";
+    cout <<tracker<<endl;
+    cout<<"Comparisons:";
+    cout << counter <<endl;
 }
 //here we implement shell sort, with the gap equal to half of the size. then we will swap elements across the gap.
 void shell_sort(int numbers[], int x)
@@ -111,6 +123,10 @@ void shell_sort(int numbers[], int x)
             }
         }
     }
+    cout <<"Exchanges:";
+    cout <<tracker<<endl;
+    cout<<"Comparisons:";
+    cout << counter <<endl;
 }
 //here we have a fnction to help merge our data so that we can call it in our merge sort function
 void margerine(int numbers[], int a, int b, int c)
@@ -149,6 +165,10 @@ void margerine(int numbers[], int a, int b, int c)
     {
         numbers[d]=G[e];
     }
+    cout <<"Exchanges:";
+    cout <<tracker<<endl;
+    cout<<"Comparisons:";
+    cout << counter <<endl;
 }
 void merge_sort(int numbers[], int a, int b)
 {
